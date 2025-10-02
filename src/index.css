@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+@theme {
+  /* Color tokens */
+  --color-lightHover: #2a004a;
+  --color-darkHover: #1a001f;
+  --color-darkTheme: #11001f;
+
+  /* Font families */
+  --font-Outfit: "Outfit", sans-serif;
+  --font-Ovo: "Ovo", serif;
+
+  /* Box shadows */
+  --shadow-black: 4px 4px 0 #000;
+  --shadow-white: 4px 4px 0 #fff;
+}
+
+/* Dark mode style overrides (optional if needed) */
+@theme dark {
+  /* You can customize further if necessary */
+}
