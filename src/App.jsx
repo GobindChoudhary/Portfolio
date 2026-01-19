@@ -4,21 +4,17 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import Services from "./components/Services";
 import Work from "./components/Work";
+import Services from "./components/Services";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark").matches)
-    ) {
-      setIsDarkMode(true);
-    } else {
+    if (localStorage.theme === "light") {
       setIsDarkMode(false);
+    } else {
+      setIsDarkMode(true);
     }
   }, []);
 
@@ -28,7 +24,7 @@ function App() {
       localStorage.theme = "dark";
     } else {
       document.documentElement.classList.remove("dark");
-      localStorage.theme = "";
+      localStorage.theme = "light";
     }
   });
   return (
@@ -36,7 +32,7 @@ function App() {
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Header isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
-      {/* <Services isDarkMode={isDarkMode} /> */}
+      {/* <Services /> */}
       <Work isDarkMode={isDarkMode} />
       <Contact isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} />

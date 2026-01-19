@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import Image from "./Image";
+import Image from "./image";
 import { assets } from "../assets/assets";
 import { motion } from "motion/react";
 
@@ -96,7 +96,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           {/* Contact Button (Desktop) */}
           <a
             href="#contact"
-            className="hidden lg:flex items-center gap-3 px-10 px-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50 dark:text-white "
+            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50 dark:text-white"
           >
             Contact
             <Image

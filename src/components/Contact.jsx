@@ -119,7 +119,7 @@ const Contact = ({ isDarkMode }) => {
           <motion.input
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1 }}
+            transition={{ duration: 0.4, delay: 1 }}
             type="text"
             placeholder="Enter your name"
             required
@@ -129,7 +129,7 @@ const Contact = ({ isDarkMode }) => {
           <motion.input
             initial={{ x: 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1 }}
+            transition={{ duration: 0.4, delay: 1 }}
             type="email"
             placeholder="Enter your email"
             required
@@ -140,7 +140,7 @@ const Contact = ({ isDarkMode }) => {
         <motion.textarea
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1 }}
+          transition={{ duration: 0.4, delay: 1 }}
           rows="6"
           placeholder="Enter your message"
           className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:border-white/90 dark:bg-darkHover/30"
