@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Work from "./components/Work";
-import Services from "./components/Services";
+// import Services from "./components/Services";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);

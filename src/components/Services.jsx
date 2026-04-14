@@ -1,4 +1,4 @@
-import { assets, serviceData } from "../assets/assets";
+import { assets } from "../assets/assets";
 import Image from "./image";
 import React from "react";
 import { motion } from "framer-motion"; // ✅ correct import
